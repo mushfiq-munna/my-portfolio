@@ -1,0 +1,40 @@
+@use "../utils" as *;
+
+.pf-hero-btn {
+  & a {
+    color: #fff;
+    background: var(--tp-theme-color);
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.pf-project-btn {
+  & a {
+    padding: 10px 20px;
+  }
+}
+
+.center-btn {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  @media #{$sm, $xs} {
+    text-align: center;
+  }
+}
+.pf-about-btn-2 {
+  & a {
+    color: #000;
+    display: inline-block;
+    padding: 13px 20px;
+    border: 1px solid #ddd9d9;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

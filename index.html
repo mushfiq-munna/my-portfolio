@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div id="pf-header-sticky" class="z-11">
+        <div class="container-fluid pt-15 pb-15 plr-25">
+          <div class="row d-flex align-items-center">
+            <div class="col-xl-4 col-lg-5 col-md-8 col-6">
+              <div class="pf-logo-wrapper d-flex align-items-center">
+                <div class="pf-logo mr-10">
+                  <a href="index.html">
+                    <img src="./assets/img/logo/header-logo.png" alt="" />
+                  </a>
+                </div>
+                <div class="pf-name">
+                  <h3 class="fs-32 fw-600">Brooklyn</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-8 col-lg-7 col-md-4 col-6">
+              <div class="pf-main-menu d-none d-lg-block pf-mobile-menu-active">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#process">Process</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="pf-header-bar d-lg-none">
+                <button class="pf-offcanvas-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Offcanvas Area -->
+    <div class="pf-offcanvas">
+      <div class="pf-offcanvas-wrapper">
+        <div
+          class="pf-offcanvas-header d-flex align-items-center justify-content-between mb-90"
+        >
+          <div class="pf-offcanvas-logo">
+            <a href="index.html"
+              ><img src="./assets/img/logo/header-logo.png" alt="" />
+              <span class="fw-600">Brooklyn</span></a
+            >
+          </div>
+          <div class="pf-offcanvas-close">
+            <button class="pf-offcanvas-close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pf-offcanvas-menu d-xl-none mb-50">
+          <nav></nav>
+        </div>
+
+        <div class="pf-offcanvas-contact mb-50">
+          <h3 class="pf-offcanvas-title-sm text-upper">Information</h3>
+          <span><a href="#">+420770-1007</a></span>
+          <span><a href="#">hello@exdos.com</a></span>
+          <span><a href="#">Avenue de Roma158b, Lisbaa</a></span>
+        </div>
+
+        <div class="pf-offcanvas-social">
+          <h3 class="pf-offcanvas-title-sm text-upper">Follow us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas-overlay Area -->
+    <div class="pf-offcanvas-overlay"></div>
+
+    <main>
+      <!-- Hero Area Started -->
+      <section class="pf-hero-area pt-120 pb-150 hero-bg">
+        <div id="hero" class="container-fluid plr-25 pf-hero-wrapper">
+          <div class="row flex-column-reverse flex-md-row">
+            <div class="col-xl-7 col-md-6">
+              <div class="pf-hero-wrapper">
+                <div class="pf-hero-content pt-50 mr-100 mb-150">
+                  <h1 class="pf-hero-title fs-60 fw-600 mb-25">
+                    Hello, I’m <br />
+                    Brooklyn Gilbert
+                  </h1>
+                  <p>
+                    I'm a Freelance UI/UX Designer and Developer based in
+                    London,
+                    <br />
+                    England. I strives to build immersive and beautiful web
+                    applications <br />
+                    through carefully crafted code and user-centric design.
+                  </p>
+                  <div class="pf-hero-btn mt-20">
+                    <a href="#">Say Hello!</a>
+                  </div>
+                </div>
+                <div class="pf-fact-area mr-100">
+                  <div class="container gx-0">
+                    <div class="row gx-1">
+                      <div class="col-xl-4 col-md-4 col-sm-4">
+                        <div class="pffact text-center">
+                          <div class="pffact__text fw-600">
+                            <span>15 Y.</span>
+                            <h6 class="pffact__title fw-400">Experience</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 col-sm-4">
+                        <div class="pffact text-center">
+                          <div class="pffact__text fw-600">
+                            <span>250+</span>
+                            <h6 class="pffact__title fw-400">
+                              Projects Completed
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-md-4 col-sm-4">
+                        <div class="pffact text-center">
+                          <div class="pffact__text fw-600">
+                            <span>58</span>
+                            <h6 class="pffact__title fw-400">Happy Clients</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-6">
+              <div class="pf-hero-img w-img br-25">
+                <img src="./assets/img/hero/hero-th.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="about"
+          class="pf-about-area pt-120 ml-20 mr-20 p-relative pf-bg-white"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-5 col-md-6 parent">
+                <div class="pf-about-thumb w-img br-10">
+                  <img src="./assets/img/about/about-th.png" alt="" />
+                </div>
+                <div class="pf-about-social child p-absolute z-index-9">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-xl-7 col-md-6 d-flex align-items-center">
+                <div class="pf-about-content pl-100 mt-75">
+                  <h2 class="pf-about-title mb-25">
+                    I am Professional User Experience Designer
+                  </h2>
+                  <p class="mb-25">
+                    I design and develop services for customers specializing
+                    creating stylish, modern websites, web services and online
+                    stores. My passion is to design digital user experiences.
+                  </p>
+                  <p>
+                    I design and develop services for customers specializing
+                    creating stylish, modern websites, web services.
+                  </p>
+                  <div class="pf-about-btn">
+                    <div class="pf-hero-btn mt-20 pr-15 d-inline-block">
+                      <a href="#">My Projects</a>
+                    </div>
+
+                    <div class="pf-about-btn-2 mt-20 d-inline-block">
+                      <a href="#">Download CV</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Area Started -->
+      <section
+        id="process"
+        class="pf-process-area pb-130"
+        data-bg-color="#f0f1f3"
+      >
+        <div class="container-fluid plr-20 res-pad">
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="pf-process-content mb-35">
+                <h1 class="pfprocess-title fw-600 mb-15">Work Process</h1>
+                <p>
+                  Driven by design and powered by code, I create digital <br />
+                  interfaces that feel intuitive and perform seamlessly. <br />
+                  Every layout, animation, and component is crafted with
+                  <br />intention — merging usability with visual clarity,
+                </p>
+                <p>
+                  I blend clean design with efficient code to build
+                  <br />engaging, user-friendly web experiences that stand out.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="pfprocess pfprocess-1 br-24">
+                    <div class="pfprocess__icon mb-25">
+                      <img src="./assets/img/icon/001-edit-note.png" alt="" />
+                    </div>
+                    <div class="pfprocess__text">
+                      <h5 class="pfprocess__title mb-15">
+                        <a href="#">1. Research</a>
+                      </h5>
+                      <p>
+                        Design meets function in every pixel, blending clarity
+                        with intuitive motion.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="pfprocess pfprocess-2 mt-20 br-24">
+                    <div class="pfprocess__icon mb-25">
+                      <img src="./assets/img/icon/002-linechart.png" alt="" />
+                    </div>
+                    <div class="pfprocess__text">
+                      <h5 class="pfprocess__title mb-15">
+                        <a href="#">2. Analyze</a>
+                      </h5>
+                      <p>
+                        Crafting clean, thoughtful interfaces where form flows
+                        seamlessly into function and clarity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="pfprocess pfprocess-3 br-24">
+                    <div class="pfprocess__icon mb-25">
+                      <img src="./assets/img/icon/003-write.png" alt="" />
+                    </div>
+                    <div class="pfprocess__text">
+                      <h5 class="pfprocess__title mb-15">
+                        <a href="#">3. Design</a>
+                      </h5>
+                      <p>
+                        I design seamless digital experiences with precision,
+                        purpose, and a touch of elegance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="pfprocess pfprocess-4 mt-30 br-24">
+                    <div class="pfprocess__icon mb-25">
+                      <img src="./assets/img/icon/004-computer.png" alt="" />
+                    </div>
+                    <div class="pfprocess__text">
+                      <h5 class="pfprocess__title mb-15">
+                        <a href="#">4. Launch</a>
+                      </h5>
+                      <p>
+                        I craft digital products where thoughtful design meets
+                        performance-driven, responsive development.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Area Started -->
+      <section id="portfolio" class="pf-portfolio-area pt-120 pb-100">
+        <div class="container-fluid">
+          <div class="pf-section-title-wrapper mb-65 text-center">
+            <h2 class="pf-section-title mb-20">Portfolio</h2>
+            <p>
+              Here's a selection of my recent work, showcasing my skills in
+              <br />
+              creating user-centric and visually appealing interfaces.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6">
+              <div class="pfportfolio mb-30">
+                <div class="pfportfolio__thumb w-img">
+                  <a href="#"
+                    ><img src="./assets/img/portfolio/p-thumb-1.png" alt=""
+                  /></a>
+                </div>
+                <div class="pfportfolio__content">
+                  <span class="pfportfolio__subtitle">UI-UX DESIGN</span>
+                  <h5 class="pfportfolio__title mb-10 fw-600">
+                    <a href="#">Product Admin Dashboard</a>
+                  </h5>
+                  <p>
+                    I focus on crafting smooth, responsive interfaces that
+                    balance aesthetic appeal with practical functionality.
+                  </p>
+                  <div class="pfportfolio__btn">
+                    <a class="align-items-center" href="#">
+                      Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="pfportfolio mb-30">
+                <div class="pfportfolio__thumb w-img">
+                  <a href="#"
+                    ><img src="./assets/img/portfolio/p-thumb-2.png" alt=""
+                  /></a>
+                </div>
+                <div class="pfportfolio__content">
+                  <span class="pfportfolio__subtitle">UI-UX DESIGN</span>
+                  <h5 class="pfportfolio__title mb-10 fw-600">
+                    <a href="#">Product Admin Dashboard</a>
+                  </h5>
+                  <p>
+                    Designed an intuitive dashboard for product management,
+                    emphasizing clarity and user efficiency.
+                  </p>
+                  <div class="pfportfolio__btn">
+                    <a class="align-items-center" href="#">
+                      Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="pfportfolio mb-30">
+                <div class="pfportfolio__thumb w-img">
+                  <a href="#"
+                    ><img src="./assets/img/portfolio/p-thumb-3.png" alt=""
+                  /></a>
+                </div>
+                <div class="pfportfolio__content">
+                  <span class="pfportfolio__subtitle">UI-UX DESIGN</span>
+                  <h5 class="pfportfolio__title mb-10 fw-600">
+                    <a href="#">Product Admin Dashboard</a>
+                  </h5>
+                  <p>
+                    Developed a modern admin panel with a focus on usability and
+                    seamless navigation for end users and so on.
+                  </p>
+                  <div class="pfportfolio__btn">
+                    <a class="align-items-center" href="#">
+                      Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="pfportfolio mb-30">
+                <div class="pfportfolio__thumb w-img">
+                  <a href="#"
+                    ><img src="./assets/img/portfolio/p-thumb-4.png" alt=""
+                  /></a>
+                </div>
+                <div class="pfportfolio__content">
+                  <span class="pfportfolio__subtitle">UI-UX DESIGN</span>
+                  <h5 class="pfportfolio__title mb-10 fw-600">
+                    <a href="#">Product Admin Dashboard</a>
+                  </h5>
+                  <p>
+                    Created a responsive dashboard layout that adapts smoothly
+                    across devices and screen sizes and so on.
+                  </p>
+                  <div class="pfportfolio__btn">
+                    <a class="align-items-center" href="#">
+                      Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="pfportfolio mb-30">
+                <div class="pfportfolio__thumb w-img">
+                  <a href="#"
+                    ><img src="./assets/img/portfolio/p-thumb-5.png" alt=""
+                  /></a>
+                </div>
+                <div class="pfportfolio__content">
+                  <span class="pfportfolio__subtitle">UI-UX DESIGN</span>
+                  <h5 class="pfportfolio__title mb-10 fw-600">
+                    <a href="#">Product Admin Dashboard</a>
+                  </h5>
+                  <p>
+                    Implemented interactive charts and widgets to visualize
+                    product data effectively for stakeholders and.
+                  </p>
+                  <div class="pfportfolio__btn">
+                    <a class="align-items-center" href="#">
+                      Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="pfportfolio mb-30">
+                <div class="pfportfolio__thumb w-img">
+                  <a href="#"
+                    ><img src="./assets/img/portfolio/p-thumb-6.png" alt=""
+                  /></a>
+                </div>
+                <div class="pfportfolio__content">
+                  <span class="pfportfolio__subtitle">UI-UX DESIGN</span>
+                  <h5 class="pfportfolio__title mb-10 fw-600">
+                    <a href="#">Product Admin Dashboard</a>
+                  </h5>
+                  <p>
+                    Enhanced user experience by streamlining workflows and
+                    optimizing interface components and so on.
+                  </p>
+                  <div class="pfportfolio__btn">
+                    <a class="align-items-center" href="#">
+                      Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pf-hero-btn pf-project-btn mt-20 text-center">
+            <a href="#">More Project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cta Area -->
+      <section
+        id="cta"
+        class="pf-cta-area pt-100 pb-100"
+        data-bg-color="#101828"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="pf-section-title-wrapper pf-section-title-wrapper-2 mb-15 text-center"
+            >
+              <h1 class="pf-section-title mb-30 pf-text-white">
+                Do you have a Project Idea? <br />
+                Let's discuss your project!
+              </h1>
+              <p>
+                I'm always open to discussing new projects and creative ideas.
+                Let's <br />
+                connect and build something amazing together.
+              </p>
+            </div>
+            <div
+              class="pf-hero-btn pf-project-btn pf-project-btn-2 text-center"
+            >
+              <a href="#"
+                >Let's Work Together <i class="fas fa-arrow-right ml-15"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Area Started -->
+      <!-- <section class="pf-blog-area pt-120 pb-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="swiper pf-blog-active">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pfportfolio mb-30">
+                    <div class="pfportfolio__thumb">
+                      <a href="#"
+                        ><img src="./assets/img/blog/blog-1.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="pfportfolio__content">
+                      <div class="pfportfolio__meta">
+                        <span><a href="#">20 Sep. 2023</a></span>
+                        <cite></cite>
+                        <span><a href="#">246 Comments</a></span>
+                      </div>
+                      <h5
+                        class="pfportfolio__title pfportfolio__title-2 fw-500"
+                      >
+                        <a href="#"
+                          >Designing Engaging User Interfaces for M...</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Services Area -->
+      <section
+        id="services"
+        class="pf-services-area pt-140 pb-130"
+        data-bg-color="#f0f1f3"
+      >
+        <div class="container-fluid plr-20">
+          <div class="row">
+            <div class="col-xl-6 col-md-5">
+              <div class="pf-section-title-wrapper pf-services mt-90">
+                <h1 class="pf-section-title fw-600 mb-20">What I do?</h1>
+                <p class="pf-text-gray">
+                  I specialize in designing user experiences, crafting <br />
+                  engaging interfaces, and building robust web applications
+                  <br />that deliver value and usability.
+                </p>
+                <p class="pf-text-gray">
+                  My approach combines creativity and technical expertise <br />
+                  to deliver solutions that are both visually appealing and
+                  <br />
+                  highly functional for users.
+                </p>
+              </div>
+              <div class="pf-hero-btn pf-project-btn center-btn mt-45 mb-40">
+                <a href="#">Say Hello!</a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-7">
+              <div class="pfservices mb-20">
+                <h4 class="pfservices__title mb-15">User Experience (UX)</h4>
+                <p class="pfservices__text">
+                  I design intuitive and enjoyable experiences by understanding
+                  user needs, conducting research, and creating wireframes and
+                  prototypes that enhance usability.
+                </p>
+              </div>
+              <div class="pfservices mb-20">
+                <h4 class="pfservices__title mb-15">User Experience (UX)</h4>
+                <p class="pfservices__text">
+                  I design intuitive and enjoyable experiences by understanding
+                  user needs, conducting research, and creating wireframes and
+                  prototypes that enhance usability.
+                </p>
+              </div>
+              <div class="pfservices mb-20">
+                <h4 class="pfservices__title mb-15">User Experience (UX)</h4>
+                <p class="pfservices__text">
+                  I design intuitive and enjoyable experiences by understanding
+                  user needs, conducting research, and creating wireframes and
+                  prototypes that enhance usability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand Area -->
+      <div id="brand" class="pf-brand-area-wrapper pt-120 pb-100">
+        <div class="pf-section-title-wrapper mb-65 text-center">
+          <h1 class="pf-section-title mb-20 fw-600">Happy Clients</h1>
+          <p class="pf-text-gray">
+            I've had the pleasure of working with a diverse range of
+            <br />
+            companies, from startups to established brands.
+          </p>
+        </div>
+        <div class="pf-brand-area pt-40 pb-40 mb-20">
+          <div class="pf-brand-wrapper">
+            <div class="swiper pf-brand-active">
+              <div class="swiper-wrapper pf-slide-transition">
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-1.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-3.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-4.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-5.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-6.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-7.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-4.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-1.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-3.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide pf-brand-slide-element">
+                  <div class="tp-brand-img">
+                    <img src="./assets/img/brand/brand-y-5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonisl Area -->
+      <section id="testimonial" class="pf-testimonial-area pt-130 pb-130">
+        <div class="container">
+          <div class="pf-section-title-wrapper mb-65 text-center">
+            <h1 class="pf-section-title mb-20 fw-600">Testimonial</h1>
+            <p class="pf-text-gray">
+              Working with this team was a fantastic experience. Their <br />
+              attention to detail and commitment to quality exceeded our <br />
+              expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact area -->
+      <section
+        id="contact"
+        class="pf-contact-area p-relative pt-120 pb-100 ml-10 mr-10 br-20"
+        data-bg-color="#fff"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-12">
+              <div class="pf-section-title-wrapper mb-20">
+                <h2 class="pf-section-title fw-600 mb-20 fs-35">
+                  Let’s discuss your Project
+                </h2>
+                <p class="pf-text-gray fs-18 mb-30">
+                  I'm available for freelance work. Drop me a line if <br />
+                  you have a project you think I'd be a good fit for.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-xl-8 col-md-4">
+                  <div class="pfcontactinfo d-flex align-items-center mb-10">
+                    <div class="pfcontactinfo__icon mr-15">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="pfcontactinfo__text">
+                      <span>Address:</span>
+                      <h6 class="fw-500">New Mexico, 31134</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-8 col-md-4">
+                  <div class="pfcontactinfo d-flex align-items-center mb-10">
+                    <div class="pfcontactinfo__icon mr-15">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="pfcontactinfo__text">
+                      <span>My Mail:</span>
+                      <h6 class="fw-500">mymail@gmail.com</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-8 col-md-4">
+                  <div class="pfcontactinfo d-flex align-items-center mb-10">
+                    <div class="pfcontactinfo__icon mr-15">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="pfcontactinfo__text">
+                      <span>Call Me:</span>
+                      <h6 class="fw-500">012-234 0000</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-8 col-12">
+                  <div class="pfcontactinfo__social mt-25 mb-30 text-md-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-12">
+              <div class="contact-form-wrapper mt-10">
+                <p class="pf-text-gray fs-18 mb-30">
+                  I'm always open to discussing product design work or
+                  partnership opportunities.
+                </p>
+                <div class="contact-form-box">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-md-12 mb-30">
+                        <input type="text" placeholder="Full Name*" />
+                      </div>
+                      <div class="col-md-6 mb-30">
+                        <input
+                          type="email"
+                          name="email"
+                          id="#"
+                          placeholder="Email Here*"
+                        />
+                      </div>
+                      <div class="col-md-6 mb-30">
+                        <input
+                          type="text"
+                          name="text"
+                          id="#"
+                          placeholder="Subject*"
+                        />
+                      </div>
+                      <div class="col-md-12 mb-10">
+                        <textarea
+                          name="text"
+                          id="#"
+                          cols="30"
+                          rows="10"
+                          placeholder="write note*"
+                        ></textarea>
+                      </div>
+                      <div class="col-12 center-btn">
+                        <div
+                          class="pf-hero-btn pf-project-btn pf-project-btn-2 mt-45 d-inline-block"
+                        >
+                          <a class="d-flex align-items-center" href="#"
+                            >Submit
+                            <i class="fas fa-angle-double-right ml-10"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer area -->
+
+    <footer id="footer" class="pf-bg-c-blue pt-130 pb-30">
+      <div class="container-fluid plr-25">
+        <div class="row">
+          <div class="col-xl-3 col-12">
+            <div
+              class="pf-logo-wrapper pf-logo-wrapper-2 d-flex align-items-center mb-20"
+            >
+              <div class="pf-logo mr-10">
+                <a href="index.html">
+                  <img
+                    class="br-30"
+                    src="./assets/img/logo/header-logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="pf-name">
+                <h3 class="fs-32 fw-600 pf-text-white">Brooklyn</h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-md-8 d-flex align-items-center justify-content-center"
+          >
+            <div class="pf-footer-widget">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 copyright-cntr">
+            <div class="pf-footer-copyright">
+              <p class="m-0">Copyright © 2026 Picto.</p>
+            </div>
+          </div>
+        </div>
+        <p class="pf-footer-ext text-center mt-35">
+          Developed with ❤️ by <span>MRM</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery-4.0.0.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js "></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

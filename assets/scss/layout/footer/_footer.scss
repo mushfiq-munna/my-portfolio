@@ -1,0 +1,59 @@
+@use "../../utils" as *;
+
+.pf-footer {
+  &-widget {
+    @media #{ $xs} {
+      display: none;
+    }
+    & ul {
+      display: flex;
+
+      & li {
+        margin: 0px 10px;
+        list-style: none;
+        @media #{ $md, $sm, $xs} {
+          margin: 0px 5px;
+        }
+
+        & a {
+          display: inline-block;
+          font-size: 16px;
+          color: #e5e5e5;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    & p {
+      color: #e5e5e5;
+    }
+  }
+
+  &-ext {
+    color: #e5e5e5;
+    font-size: 20px;
+
+    & span {
+      color: #fff;
+    }
+  }
+}
+
+.copyright-cntr {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  @media #{ $sm, $xs} {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.pf-logo-wrapper {
+  &-2 {
+    @media #{ $md, $sm,$xs} {
+      justify-content: center;
+    }
+  }
+}

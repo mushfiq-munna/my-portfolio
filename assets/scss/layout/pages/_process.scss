@@ -1,0 +1,95 @@
+@use "../../utils" as *;
+
+.pf-process-area {
+  padding-top: 270px;
+  @media #{ $lg} {
+    padding-top: 180px;
+    padding-bottom: 110px;
+  }
+  @media #{$md} {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  @media #{$sm,$xs} {
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+}
+.pf-process-content {
+  margin-top: 185px;
+  @media #{ $lg} {
+    margin-top: 85px;
+    text-align: center;
+  }
+  @media #{$md} {
+    text-align: center;
+  }
+  @media #{$sm, $xs} {
+    margin-top: 0;
+    text-align: center;
+  }
+  & p {
+    @media #{ $lg, $md, $sm, $xs} {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+.pfprocess {
+  padding: 30px;
+  background: var(--white-color);
+  border-radius: 20px;
+  &-1 {
+    padding-bottom: 45px;
+    @media #{ $lg} {
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+    }
+  }
+  &-2 {
+    @media #{ $sm, $xs} {
+      margin-bottom: 20px;
+    }
+  }
+  &-3 {
+    @media #{ $xxl} {
+      margin-top: 20px;
+    }
+  }
+  &-4 {
+    @media #{ $lg} {
+      margin-top: 20px;
+    }
+    @media #{ $sm, $xs} {
+      margin-top: 20px;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    & img {
+      display: inline-block;
+      padding: 20px;
+      background: #f6ebff;
+
+      border-radius: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__text {
+    & p {
+      line-height: 1.5;
+    }
+  }
+}
+
+.res-pad {
+  @media #{$lg} {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

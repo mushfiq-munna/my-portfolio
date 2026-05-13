@@ -1,0 +1,106 @@
+@use "../../utils" as *;
+
+.pf-hero-are {
+  @media #{$sm, $xs} {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+}
+
+.hero-bg {
+  background:
+    // radial-gradient(
+    //   circle at 12% 100%,
+    //   rgba(255, 226, 176, 0.96) 1%,
+    //   rgba(255, 226, 176, 0.96) 5px,
+    //   rgba(0, 0, 0, 0) 15%
+    // ),
+
+    radial-gradient(
+      circle at 95% -15%,
+      rgba(218, 77, 241, 0.4) 5%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+    radial-gradient(
+      circle at 100% center,
+      rgba(196, 245, 233, 0.698) 2%,
+      rgba(0, 0, 0, 0) 35%
+    );
+}
+
+.pf-hero-title {
+  line-height: 1;
+  @media #{$lg} {
+    font-size: 48px;
+  }
+  @media #{$md, $sm,$xs} {
+    font-size: 40px;
+  }
+}
+
+.pf-hero-content {
+  @media #{$lg, $md, $sm, $xs} {
+    margin-right: 0;
+  }
+  @media #{ $sm, $xs} {
+    margin-bottom: 50px;
+  }
+
+  & p {
+    color: #1b1718;
+    font-family: var(--tp-font-heading);
+    font-size: 18px;
+    @media #{ $md} {
+      font-size: 16px;
+    }
+
+    @media #{ $lg, $md, $sm, $xs} {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.pf-hero-img {
+  background: #fff;
+}
+
+.pffact {
+  background: #f6ebf6;
+  padding: 25px;
+
+  @media #{ $lg, $md} {
+    padding: 15px;
+  }
+  @media #{ $sm, $xs} {
+    padding: 15px 5px;
+  }
+
+  &__text {
+    font-size: 32px;
+    color: #364153;
+    @media #{ $lg, $md} {
+      font-size: 28px;
+    }
+
+    & span {
+      display: inline-block;
+      margin-bottom: 10px;
+      @media #{  $md} {
+        font-size: 20px;
+      }
+    }
+  }
+  &__title {
+    font-size: 16px;
+    color: #6a7282;
+    margin: 0;
+  }
+}
+
+.pf-fact-area {
+  @media #{$lg, $md, $sm, $xs} {
+    margin-right: 0;
+  }
+}

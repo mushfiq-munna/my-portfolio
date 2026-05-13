@@ -1,0 +1,261 @@
+@use "../utils" as *;
+
+.w-img {
+  & img {
+    width: 100%;
+  }
+}
+.m-img {
+  & img {
+    max-width: 100%;
+  }
+}
+
+.fix {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+
+// Z-Index Classes
+.z {
+  &-1 {
+    z-index: 1;
+  }
+  &-2 {
+    z-index: 2;
+  }
+  &-5 {
+    z-index: 5;
+  }
+  &-9 {
+    z-index: 9;
+  }
+  &-11 {
+    z-index: 11;
+  }
+}
+
+.bg-pos-end {
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+.text-cap {
+  text-transform: capitalize;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.p {
+  &-relative {
+    position: relative;
+  }
+  &-absolute {
+    position: absolute;
+  }
+}
+
+// Border Radius Classes
+.br {
+  &-5 {
+    border-radius: 5px;
+    & img {
+      border-radius: 5px;
+    }
+  }
+  &-10 {
+    border-radius: 10px;
+    & img {
+      border-radius: 10px;
+    }
+  }
+  &-15 {
+    border-radius: 15px;
+    & img {
+      border-radius: 15px;
+    }
+  }
+  &-20 {
+    border-radius: 20px;
+    & img {
+      border-radius: 20px;
+    }
+  }
+  &-25 {
+    border-radius: 25px;
+    & img {
+      border-radius: 25px;
+    }
+  }
+  &-30 {
+    border-radius: 30px;
+    & img {
+      border-radius: 30px;
+    }
+  }
+}
+
+// Font Size Classes
+.fs {
+  &-8 {
+    font-size: 8px;
+  }
+  &-10 {
+    font-size: 10px;
+  }
+  &-12 {
+    font-size: 12px;
+  }
+  &-15 {
+    font-size: 15px;
+  }
+  &-18 {
+    font-size: 18px;
+  }
+  &-20 {
+    font-size: 20px;
+  }
+  &-25 {
+    font-size: 25px;
+  }
+  &-30 {
+    font-size: 30px;
+  }
+  &-32 {
+    font-size: 32px;
+  }
+  &-35 {
+    font-size: 35px;
+  }
+  &-40 {
+    font-size: 40px;
+  }
+  &-50 {
+    font-size: 50px;
+  }
+  &-60 {
+    font-size: 60px;
+  }
+  &-70 {
+    font-size: 70px;
+  }
+  &-75 {
+    font-size: 75px;
+  }
+  &-80 {
+    font-size: 80px;
+  }
+  &-85 {
+    font-size: 85px;
+  }
+  &-90 {
+    font-size: 90px;
+  }
+  &-95 {
+    font-size: 95px;
+  }
+  &-100 {
+    font-size: 100px;
+  }
+  &-110 {
+    font-size: 110px;
+  }
+  &-120 {
+    font-size: 120px;
+  }
+  &-130 {
+    font-size: 130px;
+  }
+  &-135 {
+    font-size: 135px;
+  }
+  &-140 {
+    font-size: 140px;
+  }
+  &-150 {
+    font-size: 150px;
+  }
+}
+
+// Font Weight Classes
+.fw {
+  &-400 {
+    font-weight: 400;
+  }
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+}
+
+// Text Color Classes
+.pf-text {
+  &-white {
+    color: #fff;
+  }
+  &-gray {
+    color: #99a1af;
+  }
+}
+
+// Background Color Classes
+.pf-bg {
+  &-black {
+    background-color: var(--tp-common-black);
+  }
+  &-c-blue {
+    background-color: var(--cyan-blue);
+  }
+
+  &-white {
+    background-color: var(--white-color);
+  }
+}
+
+.pf-slide-transition {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.pf-brand-slide-element {
+  width: auto;
+  display: inline-block;
+}
+
+.plr {
+  &-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.m {
+  &-0 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,68 @@
+@use "../../utils" as *;
+
+.pf-contact-area {
+  bottom: -60px;
+  @media #{ $lg} {
+    padding-top: 90px;
+    padding-bottom: 75px;
+  }
+  @media #{ $md, $sm, $xs} {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+}
+
+.pfcontactinfo {
+  border-radius: 5px;
+  padding: 20px;
+
+  @media #{ $md, $sm, $xs} {
+    padding: 15px 5px;
+  }
+
+  &__icon {
+    background: #f6ebff;
+    border-radius: 5px;
+
+    @media #{ $md, $sm, $xs} {
+      margin-right: 7px;
+    }
+    & i {
+      color: var(--tp-theme-color);
+      padding: 15px 18px;
+      font-size: 21px;
+
+      @media #{ $md, $sm, $xs} {
+        padding: 13px 15px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__text {
+    & span {
+      font-size: 14px;
+    }
+  }
+
+  &__social {
+    & a {
+      display: inline-block;
+      // background: #f6ebff;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin: 0;
+      & i {
+        color: var(--tp-theme-color);
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.contact-form-box {
+  & input,
+  & textarea {
+    border-bottom: 1px solid #99a1af;
+  }
+}

@@ -1,0 +1,8 @@
+@use "../../utils" as *;
+
+.pf-cta-area {
+  @media #{ $sm, $xs} {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

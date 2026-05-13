@@ -1,0 +1,87 @@
+@use "../../utils" as *;
+
+.pf {
+  &-logo {
+    & a {
+      & img {
+        width: 57px;
+        height: 56px;
+        border-radius: 30px;
+      }
+    }
+  }
+  &-name {
+    & h3 {
+      margin: 0;
+    }
+  }
+
+  &-main-menu {
+    & ul {
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      & li {
+        & a {
+          display: inline-block;
+          // background: #9929fb;
+          color: #000;
+          margin: 0px 4px;
+          padding: 12px 20px;
+          border-radius: 5px;
+          font-weight: 600;
+          font-size: 16px;
+          transition: 0.3s;
+          @media #{$lg} {
+            padding: 12px 15px;
+          }
+
+          &:hover {
+            background-color: #18181b1a;
+            color: #9929fb;
+          }
+        }
+      }
+    }
+  }
+
+  &-header-bar {
+    display: flex;
+    justify-content: end;
+    & button {
+      background: none;
+      font-size: 28px;
+      & i {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// animation keyframe
+@keyframes pffadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pffadeInDown {
+  animation: tpfadeInDown 1s ease-out forwards;
+}
+
+.header-sticky {
+  position: fixed;
+  background: var(--color-soft-white);
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: 0.7s ease-in-out 0s normal none 1 running pffadeInDown;
+  animation: 0.7s ease-in-out 0s normal none 1 running pffadeInDown;
+  box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
+}

@@ -1,0 +1,48 @@
+@use "../../utils" as *;
+
+.pf-services-area {
+  @media #{ $lg} {
+    padding-top: 120px;
+    padding-bottom: 115px;
+  }
+  @media #{ $md} {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+  @media #{ $sm, $xs} {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+.pfservices {
+  background: var(--white-color);
+  padding: 30px 35px;
+  border-radius: 10px;
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__text {
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+.pf-services {
+  & p {
+    @media #{ $lg, $md, $sm, $xs} {
+      br {
+        display: none;
+      }
+    }
+  }
+  @media #{ $sm, $xs} {
+    margin-top: 0;
+  }
+  & .pf-section-title {
+    @media #{ $sm, $xs} {
+      text-align: center;
+    }
+  }
+}
