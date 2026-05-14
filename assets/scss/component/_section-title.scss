@@ -5,6 +5,35 @@
     font-size: 45px;
   }
   @media #{ $sm, $xs} {
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  &-wrapper {
+    & p {
+      @media #{$lg} {
+        br {
+          display: none;
+        }
+      }
+      @media #{$sm, $xs} {
+        font-size: 14px;
+        line-height: 1.4;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-cta {
+    @media #{$sm, $xs} {
+      font-size: 24px;
+    }
+  }
+}
+
+.footer-sm-title {
+  @media #{ $sm, $xs} {
+    font-size: 24px;
   }
 }

@@ -7,6 +7,13 @@
   }
 }
 
+.pf-hero-container {
+  @media #{$sm, $xs} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .hero-bg {
   background:
     // radial-gradient(
@@ -30,19 +37,26 @@
 
 .pf-hero-title {
   line-height: 1;
-  @media #{$lg} {
+  @media #{$xl, $lg, $md} {
     font-size: 48px;
   }
-  @media #{$md, $sm,$xs} {
-    font-size: 40px;
+  @media #{$sm,$xs} {
+    font-size: 36px;
   }
 }
 
 .pf-hero-content {
   @media #{$lg, $md, $sm, $xs} {
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  @media #{ $md, $sm, $xs} {
     margin-right: 0;
   }
-  @media #{ $sm, $xs} {
+  @media #{$xl} {
+    margin-right: 50px;
+  }
+  @media #{$md, $sm, $xs} {
     margin-bottom: 50px;
   }
 
@@ -53,11 +67,13 @@
     @media #{ $md} {
       font-size: 16px;
     }
-
-    @media #{ $lg, $md, $sm, $xs} {
+    @media #{$xl, $lg, $md, $sm, $xs} {
       br {
         display: none;
       }
+    }
+    @media #{$sm, $xs} {
+      line-height: 1.4;
     }
   }
 }
@@ -71,7 +87,7 @@
   padding: 25px;
 
   @media #{ $lg, $md} {
-    padding: 15px;
+    padding: 15px 10px;
   }
   @media #{ $sm, $xs} {
     padding: 15px 5px;
@@ -96,6 +112,10 @@
     font-size: 16px;
     color: #6a7282;
     margin: 0;
+
+    @media #{$lg, $md, $sm, $xs} {
+      font-size: 15px;
+    }
   }
 }
 

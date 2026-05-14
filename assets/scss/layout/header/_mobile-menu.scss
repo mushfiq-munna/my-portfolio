@@ -6,10 +6,11 @@
       list-style: none;
       border-bottom: 1px solid rgba(1, 15, 28, 0.1);
       & a {
+        color: var(--tp-heading-color);
         padding: 8px 0;
         display: block;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
       }
     }
   }

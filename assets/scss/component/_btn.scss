@@ -9,6 +9,11 @@
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
+
+    @media #{$md, $sm, $xs} {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
   }
 }
 
@@ -19,11 +24,7 @@
 }
 
 .center-btn {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
-  @media #{$sm, $xs} {
+  @media #{$md, $lg, $sm, $xs} {
     text-align: center;
   }
 }
@@ -36,5 +37,9 @@
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
+    @media #{$md, $sm, $xs} {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
   }
 }

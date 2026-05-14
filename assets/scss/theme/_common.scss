@@ -252,10 +252,33 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  &-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &-70 {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  &-90 {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .m {
   &-0 {
     margin: 0;
+  }
+}
+
+.mlr {
+  &-70 {
+    margin-left: 70px;
+    margin-right: 70px;
   }
 }

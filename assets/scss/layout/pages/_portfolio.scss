@@ -14,7 +14,15 @@
   border: 1px solid #e9e9e9;
   border-radius: 10px;
   &__content {
-    padding: 30px;
+    padding: 23px;
+
+    @media #{$lg, $md} {
+      padding: 15px;
+    }
+    @media #{$md} {
+      padding: 10px;
+    }
+
     & p {
       line-height: 1.5;
       font-size: 14px;
@@ -25,6 +33,13 @@
     &-2 {
       line-height: 1.7;
       margin: 0;
+
+      @media #{$lg, $md} {
+        font-size: 16px;
+      }
+      @media #{ $md} {
+        font-size: 13px;
+      }
     }
   }
   &__subtitle {
@@ -56,15 +71,34 @@
       background: #99a1af;
       display: inline-block;
       margin: 0 2px;
+      @media #{$lg, $md} {
+        margin: 0;
+      }
+      @media #{ $md, $sm, $xs} {
+        height: 8px;
+      }
     }
     & span {
       font-size: 14px;
+      @media #{$lg} {
+        font-size: 12px;
+      }
+      @media #{ $md, $sm, $xs} {
+        font-size: 12px;
+      }
     }
   }
 
   &__thumb {
+    overflow: hidden;
     & img {
       border-radius: 5px 5px 0 0;
+      height: 185px;
+      object-fit: cover;
+      display: block;
+      @media #{$md} {
+        height: 100px;
+      }
     }
   }
 }

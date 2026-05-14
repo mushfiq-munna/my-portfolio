@@ -3,18 +3,21 @@
 .pf-about {
   &-area {
     border-radius: 20px;
-    padding-bottom: 190px;
-    bottom: -270px;
-    box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
+    // padding-bottom: 190px;
+    top: 130px;
+    z-index: 1;
 
     @media #{$lg} {
-      padding-top: 85px;
-      padding-bottom: 115px;
+      top: 175px;
     }
-    @media #{$md} {
-      padding-top: 75px;
-      padding-bottom: 90px;
+
+    @media #{$xl} {
+      top: 162px;
     }
+    @media #{$xxl, $xxlm} {
+      top: 190px;
+    }
+
     @media #{$sm, $xs} {
       padding-top: 50px;
       padding-bottom: 60px;
@@ -24,64 +27,57 @@
     background: #f0f1f3;
   }
 
-  &-social {
-    margin-top: -50px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-
-    @media #{ $md} {
-      padding: 15px;
-    }
-    & a {
-      display: inline-block;
-      color: var(--tp-theme-color);
-      font-size: 20px;
-      margin-right: 25px;
-      @media #{$lg, $md} {
-        margin-right: 15px;
-      }
-      @media #{ $md} {
-        margin-right: 10px;
-      }
-    }
-  }
-
   &-content {
     @media #{$lg} {
-      padding-left: 65px;
+      padding-left: 0;
     }
     @media #{$md} {
       padding-left: 7px;
     }
+    @media #{$sm, $xs} {
+      padding-left: 0;
+    }
+
+    @media #{$sm, $xs} {
+      text-align: center;
+    }
 
     & p {
-      @media #{$md} {
+      @media #{$md, $sm, $xs} {
         font-size: 15px;
+        line-height: 1.4;
+        margin-bottom: 20px;
       }
     }
   }
 
   &-title {
-    font-size: 32px;
+    font-size: 38px;
+    font-weight: 600;
+    @media #{$lg} {
+      font-size: 36px;
+    }
+    @media #{$md} {
+      font-size: 34px;
+    }
+    @media #{$sm, $xs} {
+      font-size: 30px;
+    }
   }
-}
 
-.parent {
-  position: relative;
-  height: 300px;
-}
+  &-container {
+    padding: 90px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
 
-.child {
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  transform: translate(-50%, 169%);
-
-  @media #{$lg} {
-    bottom: -20%;
-  }
-  @media #{$md} {
-    bottom: -9%;
+    @media #{$lg} {
+      padding: 70px 65px;
+    }
+    @media #{$md} {
+      padding: 60px 45px;
+    }
+    @media #{$sm, $xs} {
+      padding: 20px 45px;
+    }
   }
 }

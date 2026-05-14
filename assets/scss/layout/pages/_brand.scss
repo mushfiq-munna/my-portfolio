@@ -1,0 +1,13 @@
+@use "../../utils" as *;
+
+.tp-brand-img {
+  & img {
+    padding: 30px;
+  }
+}
+
+.pf-brand-area-wrapper {
+  @media #{ $sm, $xs} {
+    padding-top: 70px;
+  }
+}

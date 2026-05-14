@@ -1,48 +1,64 @@
 @use "../../utils" as *;
 
-.pf-process-area {
-  padding-top: 270px;
-  @media #{ $lg} {
-    padding-top: 180px;
-    padding-bottom: 110px;
+.pf-process {
+  &-area {
+    padding-top: 270px;
+    @media #{ $lg} {
+      padding-top: 180px;
+      padding-bottom: 110px;
+    }
+    @media #{$md} {
+      padding-top: 40px;
+      padding-bottom: 100px;
+    }
+    @media #{$sm,$xs} {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
   }
-  @media #{$md} {
-    padding-top: 40px;
-    padding-bottom: 100px;
-  }
-  @media #{$sm,$xs} {
-    padding-top: 200px;
-    padding-bottom: 80px;
-  }
-}
-.pf-process-content {
-  margin-top: 185px;
-  @media #{ $lg} {
-    margin-top: 85px;
-    text-align: center;
-  }
-  @media #{$md} {
-    text-align: center;
-  }
-  @media #{$sm, $xs} {
-    margin-top: 0;
-    text-align: center;
-  }
-  & p {
-    @media #{ $lg, $md, $sm, $xs} {
-      br {
-        display: none;
+
+  &-content {
+    margin-top: 185px;
+    @media #{ $lg} {
+      margin-top: 85px;
+      text-align: center;
+    }
+    @media #{$md} {
+      text-align: center;
+    }
+    @media #{$sm, $xs} {
+      margin-top: 0;
+      text-align: center;
+    }
+    & p {
+      @media #{ $lg, $md, $sm, $xs} {
+        br {
+          display: none;
+        }
+      }
+
+      @media #{ $sm, $xs} {
+        font-size: 14px;
+        line-height: 1.3;
       }
     }
   }
+
+  &-title {
+    @media #{ $sm, $xs} {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
 }
+
 .pfprocess {
   padding: 30px;
   background: var(--white-color);
   border-radius: 20px;
   &-1 {
     padding-bottom: 45px;
-    @media #{ $lg} {
+    @media #{$xl, $lg} {
       padding-bottom: 30px;
       margin-bottom: 40px;
     }
@@ -58,7 +74,7 @@
     }
   }
   &-4 {
-    @media #{ $lg} {
+    @media #{$xl, $lg} {
       margin-top: 20px;
     }
     @media #{ $sm, $xs} {
@@ -91,5 +107,9 @@
   @media #{$lg} {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  @media #{$md, $sm, $xs} {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

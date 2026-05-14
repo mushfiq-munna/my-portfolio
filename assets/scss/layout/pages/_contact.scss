@@ -42,6 +42,7 @@
   &__text {
     & span {
       font-size: 14px;
+      color: var(--cyan-blue);
     }
   }
 
@@ -64,5 +65,11 @@
   & input,
   & textarea {
     border-bottom: 1px solid #99a1af;
+  }
+}
+
+.contact-sm-mg {
+  @media #{ $sm, $xs} {
+    margin-left: 90px;
   }
 }

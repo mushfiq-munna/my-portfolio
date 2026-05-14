@@ -7,7 +7,6 @@
     }
     & ul {
       display: flex;
-
       & li {
         margin: 0px 10px;
         list-style: none;
@@ -52,8 +51,20 @@
 
 .pf-logo-wrapper {
   &-2 {
-    @media #{ $md, $sm,$xs} {
-      justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media #{$xl} {
+      justify-content: start;
     }
+  }
+}
+
+.pf-footer-widget-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  @media #{$xl, $sm} {
+    justify-content: center;
   }
 }

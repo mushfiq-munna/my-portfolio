@@ -600,9 +600,30 @@ textarea {
   padding-left: 25px;
   padding-right: 25px;
 }
+.plr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.plr-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.plr-70 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.plr-90 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
 
 .m-0 {
   margin: 0;
+}
+
+.mlr-70 {
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 /*--
@@ -5345,12 +5366,18 @@ textarea {
   font-size: 18px;
   font-weight: 600;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-hero-btn a {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
 
 .pf-project-btn a {
   padding: 10px 20px;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .center-btn {
     text-align: center;
   }
@@ -5365,6 +5392,12 @@ textarea {
   font-size: 18px;
   font-weight: 600;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-about-btn-2 a {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pf-section-title {
@@ -5373,7 +5406,33 @@ textarea {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-section-title {
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pf-section-title-wrapper p br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-section-title-wrapper p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .pf-section-title-wrapper p br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-section-title-cta {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .footer-sm-title {
+    font-size: 24px;
   }
 }
 
@@ -5473,6 +5532,33 @@ textarea {
   visibility: visible;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: var(--tp-font-body);
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 575px) {
   .pf-footer-widget {
     display: none;
@@ -5518,8 +5604,24 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+.pf-logo-wrapper-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .pf-logo-wrapper-2 {
+    justify-content: start;
+  }
+}
+
+.pf-footer-widget-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .pf-footer-widget-wrapper {
     justify-content: center;
   }
 }
@@ -5531,6 +5633,11 @@ textarea {
 }
 .pf-name h3 {
   margin: 0;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-name h3 {
+    font-size: 24px;
+  }
 }
 .pf-main-menu ul {
   list-style: none;
@@ -5563,10 +5670,16 @@ textarea {
 }
 .pf-header-bar button {
   background: none;
-  font-size: 28px;
 }
 .pf-header-bar button i {
   display: inline-block;
+  color: var(--tp-heading-color);
+  font-size: 28px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-header-bar button i {
+    font-size: 24px;
+  }
 }
 
 @keyframes pffadeInDown {
@@ -5584,6 +5697,7 @@ textarea {
 }
 
 .header-sticky {
+  width: 100%;
   position: fixed;
   background: var(--color-soft-white);
   top: 0;
@@ -5599,16 +5713,24 @@ textarea {
   border-bottom: 1px solid rgba(1, 15, 28, 0.1);
 }
 .pf-offcanvas-menu ul li a {
+  color: var(--tp-heading-color);
   padding: 8px 0;
   display: block;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-hero-are {
     padding-top: 35px;
     padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-hero-container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -5619,23 +5741,34 @@ textarea {
 .pf-hero-title {
   line-height: 1;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .pf-hero-title {
     font-size: 48px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-hero-title {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-hero-content {
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-hero-content {
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .pf-hero-content {
+    margin-right: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-hero-content {
     margin-bottom: 50px;
   }
@@ -5650,9 +5783,14 @@ textarea {
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-hero-content p br {
     display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-hero-content p {
+    line-height: 1.4;
   }
 }
 
@@ -5666,7 +5804,7 @@ textarea {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .pffact {
-    padding: 15px;
+    padding: 15px 10px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -5697,6 +5835,11 @@ textarea {
   color: #6a7282;
   margin: 0;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pffact__title {
+    font-size: 15px;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-fact-area {
@@ -5706,20 +5849,22 @@ textarea {
 
 .pf-about-area {
   border-radius: 20px;
-  padding-bottom: 190px;
-  bottom: -270px;
-  box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
+  top: 130px;
+  z-index: 1;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pf-about-area {
-    padding-top: 85px;
-    padding-bottom: 115px;
+    top: 175px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .pf-about-area {
-    padding-top: 75px;
-    padding-bottom: 90px;
+    top: 162px;
+  }
+}
+@media only screen and (min-width: 1601px) and (max-width: 3999px), only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .pf-about-area {
+    top: 190px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -5731,36 +5876,9 @@ textarea {
 .pf-about-thumb {
   background: #f0f1f3;
 }
-.pf-about-social {
-  margin-top: -50px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pf-about-social {
-    padding: 15px;
-  }
-}
-.pf-about-social a {
-  display: inline-block;
-  color: var(--tp-theme-color);
-  font-size: 20px;
-  margin-right: 25px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .pf-about-social a {
-    margin-right: 15px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pf-about-social a {
-    margin-right: 10px;
-  }
-}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pf-about-content {
-    padding-left: 65px;
+    padding-left: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5768,34 +5886,60 @@ textarea {
     padding-left: 7px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-about-content {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-about-content {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-about-content p {
     font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 20px;
   }
 }
 .pf-about-title {
-  font-size: 32px;
-}
-
-.parent {
-  position: relative;
-  height: 300px;
-}
-
-.child {
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  transform: translate(-50%, 169%);
+  font-size: 38px;
+  font-weight: 600;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .child {
-    bottom: -20%;
+  .pf-about-title {
+    font-size: 36px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .child {
-    bottom: -9%;
+  .pf-about-title {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-about-title {
+    font-size: 30px;
+  }
+}
+.pf-about-container {
+  padding: 90px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pf-about-container {
+    padding: 70px 65px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pf-about-container {
+    padding: 60px 45px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-about-container {
+    padding: 20px 45px;
   }
 }
 
@@ -5816,11 +5960,10 @@ textarea {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-process-area {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 }
-
 .pf-process-content {
   margin-top: 185px;
 }
@@ -5846,6 +5989,18 @@ textarea {
     display: none;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-process-content p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-process-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
 
 .pfprocess {
   padding: 30px;
@@ -5855,7 +6010,7 @@ textarea {
 .pfprocess-1 {
   padding-bottom: 45px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .pfprocess-1 {
     padding-bottom: 30px;
     margin-bottom: 40px;
@@ -5871,7 +6026,7 @@ textarea {
     margin-top: 20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .pfprocess-4 {
     margin-top: 20px;
   }
@@ -5903,6 +6058,12 @@ textarea {
     padding-right: 30px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .res-pad {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pf-portfolio-area {
@@ -5922,7 +6083,17 @@ textarea {
   border-radius: 10px;
 }
 .pfportfolio__content {
-  padding: 30px;
+  padding: 23px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfportfolio__content {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfportfolio__content {
+    padding: 10px;
+  }
 }
 .pfportfolio__content p {
   line-height: 1.5;
@@ -5931,6 +6102,16 @@ textarea {
 .pfportfolio__title-2 {
   line-height: 1.7;
   margin: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfportfolio__title-2 {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfportfolio__title-2 {
+    font-size: 13px;
+  }
 }
 .pfportfolio__subtitle {
   font-size: 12px;
@@ -5961,11 +6142,42 @@ textarea {
   display: inline-block;
   margin: 0 2px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfportfolio__meta cite {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pfportfolio__meta cite {
+    height: 8px;
+  }
+}
 .pfportfolio__meta span {
   font-size: 14px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pfportfolio__meta span {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pfportfolio__meta span {
+    font-size: 12px;
+  }
+}
+.pfportfolio__thumb {
+  overflow: hidden;
+}
 .pfportfolio__thumb img {
   border-radius: 5px 5px 0 0;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfportfolio__thumb img {
+    height: 100px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5992,6 +6204,11 @@ textarea {
   padding: 30px 35px;
   border-radius: 10px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pfservices {
+    padding: 25px 25px;
+  }
+}
 .pfservices__title {
   font-weight: 600;
 }
@@ -6003,6 +6220,16 @@ textarea {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-services p br {
     display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-services p {
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-services p {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -6063,6 +6290,7 @@ textarea {
 }
 .pfcontactinfo__text span {
   font-size: 14px;
+  color: var(--cyan-blue);
 }
 .pfcontactinfo__social a {
   display: inline-block;
@@ -6080,9 +6308,64 @@ textarea {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .contact-sm-mg {
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .pf-cta-area {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-testimonial-area {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.pf-testimonial-text {
+  font-size: 18px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-testimonial-text {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-testimonial-text br {
+    display: none;
+  }
+}
+.pf-testimonial-desc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-testimonial-desc br {
+    display: none;
+  }
+}
+.pf-testimonial-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+.pf-testimonial-desig {
+  font-size: 13px;
+}
+
+.tp-brand-img img {
+  padding: 30px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .pf-brand-area-wrapper {
+    padding-top: 70px;
   }
 }
 

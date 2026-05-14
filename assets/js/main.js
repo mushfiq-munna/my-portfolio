@@ -46,34 +46,57 @@
     $(this).css("color", $(this).attr("data-color"));
   });
 
-  $(".popup-img").magnificPopup({
-    type: "image",
-  });
-
-  $(".popup-video").magnificPopup({
-    type: "iframe",
-  });
-
   // testimonial slider
 
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
+  var swiper = new Swiper(".pf-testimonial-active", {
     spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
-    loop: true,
+  // blog slider
 
+  var swiper = new Swiper(".pf-blog-active", {
+    slidesPerView: 4,
+    spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
     },
+  });
 
+  // brand slider
+  var swiper = new Swiper(".pf-brand-active", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    freemode: true,
+    centeredSlides: true,
+    loop: true,
+    speed: 4000,
+    allowTouchMove: false,
     autoplay: {
-      delay: 3000,
+      delay: 1,
+      disableOnInteraction: false,
     },
   });
 })(jQuery);
