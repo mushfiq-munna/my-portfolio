@@ -56,31 +56,7 @@
   padding: 30px;
   background: var(--white-color);
   border-radius: 20px;
-  &-1 {
-    padding-bottom: 45px;
-    @media #{$xl, $lg} {
-      padding-bottom: 30px;
-      margin-bottom: 40px;
-    }
-  }
-  &-2 {
-    @media #{ $sm, $xs} {
-      margin-bottom: 20px;
-    }
-  }
-  &-3 {
-    @media #{ $xxl} {
-      margin-top: 20px;
-    }
-  }
-  &-4 {
-    @media #{$xl, $lg} {
-      margin-top: 20px;
-    }
-    @media #{ $sm, $xs} {
-      margin-top: 20px;
-    }
-  }
+
   &__icon {
     display: inline-block;
     & img {

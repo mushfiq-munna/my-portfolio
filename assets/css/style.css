@@ -6007,35 +6007,6 @@ body {
   background: var(--white-color);
   border-radius: 20px;
 }
-.pfprocess-1 {
-  padding-bottom: 45px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .pfprocess-1 {
-    padding-bottom: 30px;
-    margin-bottom: 40px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .pfprocess-2 {
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 1601px) and (max-width: 3999px) {
-  .pfprocess-3 {
-    margin-top: 20px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .pfprocess-4 {
-    margin-top: 20px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .pfprocess-4 {
-    margin-top: 20px;
-  }
-}
 .pfprocess__icon {
   display: inline-block;
 }
